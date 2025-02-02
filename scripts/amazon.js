@@ -1,6 +1,6 @@
 import { cart, addToCart } from '../data/cart.js'; //.. переходит на папку выше, импорт переменной карт из отдельного файла , as ** позволяет переназначить имя импортированного 
 import { products } from '../data/products.js';
-
+import { fromatCurrency } from './utils/money.js';
 let productsHTML = ''; //сохраняем результаты форича в переменную
 products.forEach((product) => {    //продукты грузятся из отдельного файла
   productsHTML = productsHTML + `
@@ -23,7 +23,7 @@ products.forEach((product) => {    //продукты грузятся из от
       </div>
 
       <div class="product-price">
-        $${(product.priceCents/100).toFixed(2) /* делает цену с 2 знаками после запятой*/ } 
+        $${fromatCurrency(product.priceCents) /* делает цену с 2 знаками после запятой*/ } 
       </div>
 
       <div class="product-quantity-container">
