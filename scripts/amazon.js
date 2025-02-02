@@ -1,5 +1,5 @@
-import { cart as myCart } from '../data/cart.js'; //.. переходит на папку выше, импорт переменной карт из отдельного файла , as ** позволяет переназначить имя импортированного 
-
+import { cart } from '../data/cart.js'; //.. переходит на папку выше, импорт переменной карт из отдельного файла , as ** позволяет переназначить имя импортированного 
+import { products } from '../data/products.js';
 let productsHTML = ''; //сохраняем результаты форича в переменную
 products.forEach((product) => {    //продукты грузятся из отдельного файла
   productsHTML = productsHTML + `
