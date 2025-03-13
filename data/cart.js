@@ -1,4 +1,7 @@
-export let cart = JSON.parse(localStorage.getItem('cart'));
+export let cart;
+loadFromStorge();
+export function loadFromStorge() {
+  cart = JSON.parse(localStorage.getItem('cart'));
 
 if (!cart) {
   cart = [{
@@ -10,6 +13,7 @@ if (!cart) {
     quantity: 1,
     deliveryOptionId: '2',
   }];  //export позволяет использовать код, не записывая новый тег скрипт
+}
 }
  
 function saveToStorage() {

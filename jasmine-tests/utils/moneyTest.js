@@ -1,6 +1,6 @@
-import {fromatCurrency} from '../scripts/utils/money.js'; 
+import {fromatCurrency} from '../../scripts/utils/money.js'; 
 
-describe('convert C to D', () => {
+describe('convert money', () => {
   it('convert C to D', () => {
     expect(fromatCurrency(2095)).toEqual('20.95');
   });
