@@ -51,7 +51,33 @@ class Clothing extends Product {
   }
 }
 
+/*
+const date = new Date();
+console.log(date);
+console.log(date.toLocaleTimeString());
 
+
+console.log(this);
+
+const obj2 = {
+  a: 2,
+  b: this.a, //this будет undefined потому что обращается ни к чему, this используем внутри методов объекта чтобы получить доступ к свойствам этого объекта 
+};
+
+
+function logThis() {
+  console.log(this);
+}
+logThis();
+logThis.call('hello'); //передаем методом .call строку в this внутри функции 
+
+const obj3 = {
+  method: () => {
+    console.log(this); //будет undefined потому что стрелочные функции не имеют своего this и не меняют его и принимают то значение this, которое "снаружи" стрелочной функции
+  }
+};
+obj3.method();
+*/
 
 export const products = [
   {
