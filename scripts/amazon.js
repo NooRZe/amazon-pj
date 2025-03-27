@@ -41,6 +41,8 @@ products.forEach((product) => {    //продукты грузятся из от
         </select>
       </div>
 
+      ${product.extraInfoHTML()}
+
       <div class="product-spacer"></div>
 
       <div class="added-to-cart">
